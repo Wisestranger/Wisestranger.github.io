@@ -1,0 +1,70 @@
+@font-face {
+	
+	
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Roboto Condensed', arial;
+}
+
+
+html, body {margin:0; padding:0; font-family: Arial; }
+
+
+
+
+.container{padding-top: 10px;}
+#header-shadow{ width: 100%;    position:fixed; z-index:3  ; background-color: #111; box-shadow: 0 0 100px #888;  }
+.header a.logo { display: block; float: left; font-family: 'Roboto Condensed'; font-size: 35px; color: #e2dcdc; text-decoration:none; line-height:25px;}
+.header a.logo span { font-family: Arial; font-size: 14px; display: block; }
+
+.header ul { float : right; display: table; width: 50%; margin: 5px; padding: 0px; }
+.header li { display: table-cell;   display: inline-block; padding: 15px 0px; text-align: center; font-family: 'Roboto Condensed';font-size: 17px; color: #e2dcdc; transform-style: preserve-3d;}
+
+
+
+.header li a:hover {}
+
+.home{ background: url(images/2.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; position: relative; height: 100vh; z-index: 1;}
+
+
+.navigation2 {
+  
+    z-index:1;
+    top:100px;
+}
+.navigation2 li {
+    color:#333333;
+    display:table-cell;
+    padding: 0 10px;
+    line-height:30px;
+    margin-bottom:2px;
+    font-weight:bold;
+    -webkit-transition: all .2s ease-in-out;
+    
+    text-align:left;
+    width:53px;
+    font-size: 20px;
+    color: #e2dcdc;
+}
+
+
+.header li:after {
+	top: -100%;
+	left: 0px;
+	width: 100%;
+	position: absolute;
+	background: #3a9999;
+	border-radius: 5px;
+	content: 'Клик';
+	transform-origin: left bottom;
+	transform: rotateX(90deg);
+	text-align: center;
+	cursor:pointer;
+
+}
+
+.header li:hover {
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+	cursor:pointer;
+}
