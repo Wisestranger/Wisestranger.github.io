@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --hot index.js bundle.js",
+    "prod": "webpack -p index.js bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-dev-server": "^2.4.5"
+  }
+}
